@@ -1,13 +1,14 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import CaseGidrie from './components/CaseGidrie';
-import Comparison from './components/Comparison';
-import DemoCart from './components/DemoCart';
-import Process from './components/Process';
-import FAQ from './components/FAQ';
-import Footer from './components/Footer';
-import WhatsAppFab from './components/WhatsAppFab';
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Services from './components/Services'
+import CaseGidrie from './components/CaseGidrie'
+import Comparison from './components/Comparison'
+import DemoCart from './components/DemoCart'
+import BudgetCalculator from './components/BudgetCalculator'
+import Process from './components/Process'
+import FAQ from './components/FAQ'
+import Footer from './components/Footer'
+import WhatsAppFab from './components/WhatsAppFab'
 
 export default function App() {
   return (
@@ -19,11 +20,12 @@ export default function App() {
         <CaseGidrie />
         <Comparison />
         <DemoCart />
+        <BudgetCalculator />
         <Process />
         <FAQ />
       </main>
       <Footer />
       <WhatsAppFab />
     </div>
-  );
+  )
 }
