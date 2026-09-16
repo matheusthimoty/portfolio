@@ -1,27 +1,31 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
-import Services from './components/Services'
+import DemoCart from './components/DemoCart'
+import NicheSelector from './components/NicheSelector'
 import CaseGidrie from './components/CaseGidrie'
 import Comparison from './components/Comparison'
-import DemoCart from './components/DemoCart'
-import BudgetCalculator from './components/BudgetCalculator'
+import SheetManagement from './components/SheetManagement'
+import Services from './components/Services'
 import Process from './components/Process'
+import Bonus from './components/Bonus'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 import WhatsAppFab from './components/WhatsAppFab'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white text-zinc-900 antialiased selection:bg-emerald-100 selection:text-emerald-900">
+    <div className="min-h-screen bg-slate-50 text-slate-900 flex flex-col justify-between">
       <Header />
       <main>
         <Hero />
-        <Services />
+        <DemoCart />
+        <NicheSelector />
         <CaseGidrie />
         <Comparison />
-        <DemoCart />
-        <BudgetCalculator />
+        <SheetManagement />
+        <Services />
         <Process />
+        <Bonus />
         <FAQ />
       </main>
       <Footer />

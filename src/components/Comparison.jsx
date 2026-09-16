@@ -1,66 +1,89 @@
 export default function Comparison() {
-  const points = [
+  const features = [
     {
-      feature: 'Custos Recorrentes',
-      platforms: 'R$ 50 a R$ 250/mês para sempre',
-      custom: 'Sem mensalidade de plataforma (código seu)'
+      name: 'Taxa sobre pedidos faturados',
+      platform: '2% a 4% por venda',
+      ours: '0% (Margem integral sua)',
     },
     {
-      feature: 'Taxas Sobre Vendas',
-      platforms: 'Cobram de 1% a 3% por cada transação',
-      custom: 'Zero comissão sobre seu faturamento'
+      name: 'Mensalidade obrigatória',
+      platform: 'R$ 99 a R$ 349 / mês',
+      ours: 'R$ 0 de mensalidade',
     },
     {
-      feature: 'Processo de Compra',
-      platforms: 'Cadastros longos, recuperação de senha e abandono',
-      custom: 'Pedido formatado direto no WhatsApp do cliente'
+      name: 'Canal de fechamento do pedido',
+      platform: 'Painel complexo',
+      ours: 'Direto no seu WhatsApp oficial',
     },
     {
-      feature: 'Velocidade no Celular',
-      platforms: 'Pesado, com scripts extras e lentidão',
-      custom: 'Carregamento instantâneo e código enxuto'
+      name: 'Gestão de catálogo e valores',
+      platform: 'Painéis burocráticos',
+      ours: 'Fácil como uma planilha Google',
     },
     {
-      feature: 'Flexibilidade de Regras',
-      platforms: 'Preso aos limites dos temas prontos',
-      custom: 'Adaptado exatamente à sua rotina de entregas'
-    }
-  ];
+      name: 'Acesso sem download de app',
+      platform: 'Limitado',
+      ours: 'Link web com ícone PWA',
+    },
+    {
+      name: 'Propriedade da aplicação',
+      platform: 'Aluguel contínuo',
+      ours: 'Solução própria definitiva',
+    },
+  ]
 
   return (
-    <section className="py-20 px-4 max-w-5xl mx-auto">
-      <div className="text-center max-w-2xl mx-auto mb-12">
-        <span className="text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">
-          Economia Real
-        </span>
-        <h2 className="text-2xl sm:text-3xl font-bold text-zinc-900 mt-4">
-          Por que ter uma solução própria em vez de plataformas prontas?
-        </h2>
-        <p className="text-zinc-600 text-sm mt-2">
-          Evite pagar taxas em cima do seu faturamento ou mensalidades infinitas para ferramentas engessadas.
-        </p>
-      </div>
+    <section
+      id="comparativo"
+      className="py-24 px-4 bg-slate-50 border-b border-slate-200/80"
+    >
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <div className="inline-flex items-center gap-1.5 bg-blue-50 border border-blue-200/60 px-3 py-1 rounded-full text-xs font-semibold text-blue-700 mb-3">
+            Análise de Custo-Benefício
+          </div>
+          <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Plataformas Tradicionais vs. Soluções Thimotech
+          </h2>
+          <p className="text-slate-600 text-sm sm:text-base mt-2">
+            Entenda a diferença entre alugar um software com comissão mensal e
+            ter seu próprio canal de vendas direto.
+          </p>
+        </div>
 
-      <div className="overflow-x-auto border border-zinc-200 rounded-xl bg-white shadow-sm">
-        <table className="w-full text-left text-sm border-collapse">
-          <thead>
-            <tr className="border-b border-zinc-200 bg-zinc-50/70">
-              <th className="p-4 font-semibold text-zinc-700 w-1/3">Critério</th>
-              <th className="p-4 font-semibold text-red-600 w-1/3">Plataformas Prontas</th>
-              <th className="p-4 font-bold text-emerald-700 w-1/3 bg-emerald-50/50">Desenvolvimento Sob Medida</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-zinc-200">
-            {points.map((pt, i) => (
-              <tr key={i} className="hover:bg-zinc-50/40 transition">
-                <td className="p-4 font-medium text-zinc-900">{pt.feature}</td>
-                <td className="p-4 text-zinc-600">{pt.platforms}</td>
-                <td className="p-4 font-semibold text-emerald-800 bg-emerald-50/30">{pt.custom}</td>
+        <div className="overflow-hidden bg-white border border-slate-200/80 rounded-2xl shadow-xs">
+          <table className="w-full text-left border-collapse">
+            <thead>
+              <tr className="border-b border-slate-200 bg-slate-100/60">
+                <th className="py-4 px-6 text-xs font-bold text-slate-700 uppercase tracking-wider">
+                  Critério
+                </th>
+                <th className="py-4 px-6 text-xs font-semibold text-slate-500 uppercase tracking-wider hidden sm:table-cell">
+                  Plataformas Padrão
+                </th>
+                <th className="py-4 px-6 text-xs font-extrabold text-blue-700 uppercase tracking-wider bg-blue-50/50">
+                  Thimotech Soluções
+                </th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody className="divide-y divide-slate-100 text-xs sm:text-sm">
+              {features.map((item, idx) => (
+                <tr key={idx} className="hover:bg-slate-50/60 transition">
+                  <td className="py-4 px-6 font-semibold text-slate-900">
+                    {item.name}
+                  </td>
+                  <td className="py-4 px-6 text-slate-500 hidden sm:table-cell">
+                    {item.platform}
+                  </td>
+                  <td className="py-4 px-6 font-bold text-emerald-800 bg-blue-50/30">
+                    {item.ours}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
-  );
+  )
 }

@@ -1,19 +1,31 @@
+import Logo from './Logo'
+
 export default function Footer() {
   return (
-    <footer id="contato" className="py-16 px-4 bg-zinc-900 text-white text-center">
-      <h3 className="text-2xl font-bold">Pronto para aumentar suas vendas?</h3>
-      <p className="text-zinc-400 text-sm mt-2">Vamos colocar seu catálogo ou página no ar sem complicações.</p>
-      <div className="mt-6">
-        <a 
-          href="https://wa.me/5521999999999" 
-          target="_blank" 
-          rel="noreferrer"
-          className="inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-3 rounded-lg transition"
-        >
-          Conversar pelo WhatsApp
-        </a>
+    <footer className="py-12 px-4 bg-slate-900 text-slate-400 text-xs border-t border-slate-800">
+      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="text-center sm:text-left flex flex-col sm:flex-row items-center gap-4">
+          <div className="p-2 rounded-xl bg-slate-800/80 border border-slate-700/60 inline-block">
+            <Logo size="sm" showBadge={false} />
+          </div>
+          <div>
+            <p className="font-semibold text-slate-300 text-xs">
+              Sistemas de autoatendimento e catálogos inteligentes para o
+              varejo.
+            </p>
+          </div>
+        </div>
+
+        <div className="text-center sm:text-right text-slate-500">
+          <p>
+            © {new Date().getFullYear()} Thimotech. Todos os direitos
+            reservados.
+          </p>
+          <p className="text-[11px] mt-0.5">
+            Tecnologia sob medida para o comércio local.
+          </p>
+        </div>
       </div>
-      <p className="mt-12 text-xs text-zinc-500">© Matheus Thimoteo. Desenvolvedor Web.</p>
     </footer>
-  );
+  )
 }
