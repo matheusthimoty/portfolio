@@ -1,34 +1,34 @@
 export default function Comparison() {
   const features = [
     {
-      name: 'Taxa sobre pedidos faturados',
-      platform: '2% a 4% por venda',
-      ours: '0% (Margem integral sua)',
+      name: 'Taxa cobrada sobre cada venda',
+      platform: '2% a 4% por pedido',
+      ours: '0% (o lucro é 100% seu)',
     },
     {
       name: 'Mensalidade obrigatória',
-      platform: 'R$ 99 a R$ 349 / mês',
+      platform: 'R$ 99 a R$ 349 todo mês',
       ours: 'R$ 0 de mensalidade',
     },
     {
-      name: 'Canal de fechamento do pedido',
-      platform: 'Painel complexo',
-      ours: 'Direto no seu WhatsApp oficial',
+      name: 'Onde você atende o cliente',
+      platform: 'Painéis complicados',
+      ours: 'Direto no WhatsApp oficial da loja',
     },
     {
-      name: 'Gestão de catálogo e valores',
-      platform: 'Painéis burocráticos',
-      ours: 'Fácil como uma planilha Google',
+      name: 'Como você muda preços e itens',
+      platform: 'Telas difíceis de mexer',
+      ours: 'Fácil como mexer no Excel/Google',
     },
     {
-      name: 'Acesso sem download de app',
-      platform: 'Limitado',
-      ours: 'Link web com ícone PWA',
+      name: 'O cliente precisa baixar app?',
+      platform: 'Sim ou fica pesado',
+      ours: 'Não, abre na hora pelo link',
     },
     {
-      name: 'Propriedade da aplicação',
-      platform: 'Aluguel contínuo',
-      ours: 'Solução própria definitiva',
+      name: 'Dono do sistema',
+      platform: 'Você aluga eternamente',
+      ours: 'O catálogo é da sua loja',
     },
   ]
 
@@ -40,14 +40,14 @@ export default function Comparison() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <div className="inline-flex items-center gap-1.5 bg-blue-50 border border-blue-200/60 px-3 py-1 rounded-full text-xs font-semibold text-blue-700 mb-3">
-            Análise de Custo-Benefício
+            Economia Real
           </div>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Plataformas Tradicionais vs. Soluções Thimotech
+            Plataformas de aluguel vs. Seu catálogo na Thimotech
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Entenda a diferença entre alugar um software com comissão mensal e
-            ter seu próprio canal de vendas direto.
+            Entenda por que pequenos negócios lucram muito mais com um canal de
+            venda direto e sem intermediários.
           </p>
         </div>
 
@@ -56,10 +56,10 @@ export default function Comparison() {
             <thead>
               <tr className="border-b border-slate-200 bg-slate-100/60">
                 <th className="py-4 px-6 text-xs font-bold text-slate-700 uppercase tracking-wider">
-                  Critério
+                  O que você avalia
                 </th>
                 <th className="py-4 px-6 text-xs font-semibold text-slate-500 uppercase tracking-wider hidden sm:table-cell">
-                  Plataformas Padrão
+                  Plataformas Tradicionais
                 </th>
                 <th className="py-4 px-6 text-xs font-extrabold text-blue-700 uppercase tracking-wider bg-blue-50/50">
                   Thimotech Soluções

@@ -1,24 +1,24 @@
 export default function Services() {
   const services = [
     {
-      title: 'Catálogos & Vitrines Digitais',
-      desc: 'Aplicações web completas, leves no celular e preparadas para transformar cliques no Instagram em vendas reais.',
-      badge: 'Solução Core',
+      title: 'Vitrine Online com a Sua Marca',
+      desc: 'Um link rápido e bonito com seus produtos organizados por categorias, pronto para colocar na bio do Instagram.',
+      badge: 'Visual Próprio',
     },
     {
-      title: 'Integração Direta com WhatsApp',
-      desc: 'Estruturação do fechamento de pedido com mensagem organizada, dados do cliente e cálculo automático de valores.',
-      badge: 'Automação',
+      title: 'Envio do Pedido Somado no WhatsApp',
+      desc: 'O cliente clica, monta o carrinho e a mensagem chega para você com o nome dele, endereço e valor exato calculado.',
+      badge: 'Sem Erros de Conta',
     },
     {
-      title: 'Configuração PWA (Atalho de App)',
-      desc: 'Seu cliente salva o ícone da sua loja na tela do celular como se fosse um app oficial, sem passar pelas lojas de aplicativo.',
-      badge: 'Tecnologia',
+      title: 'Ícone de Aplicativo no Celular do Cliente',
+      desc: 'O cliente pode adicionar o ícone da sua loja na tela inicial do celular como se fosse um app, sem precisar de loja de aplicativos.',
+      badge: 'Praticidade',
     },
     {
-      title: 'Treinamento e Setup Inicial',
-      desc: 'Subida dos primeiros produtos, configuração de domínio próprio e suporte para você dominar a atualização do catálogo.',
-      badge: 'Implantação',
+      title: 'Cadastro dos Primeiros Produtos & Suporte',
+      desc: 'Entregamos o catálogo já com seus primeiros produtos cadastrados e ensinamos sua equipe a atualizar tudo com facilidade.',
+      badge: 'Pronto para Rodar',
     },
   ]
 
@@ -27,10 +27,10 @@ export default function Services() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200/60 px-3 py-1 rounded-full uppercase tracking-wider">
-            Escopo de Entrega
+            Tudo Incluso
           </span>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">
-            O que está incluso na solução Thimotech
+            O que você recebe pronto para começar a vender
           </h2>
         </div>
 

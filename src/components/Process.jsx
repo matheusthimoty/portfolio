@@ -2,23 +2,23 @@ export default function Process() {
   const steps = [
     {
       step: '01',
-      title: 'Diagnóstico & Alinhamento',
-      text: 'Entendemos suas categorias, produtos e fluxo de entrega.',
+      title: 'Você envia os produtos',
+      text: 'Manda fotos, nomes e valores dos itens que você mais vende.',
     },
     {
       step: '02',
-      title: 'Desenvolvimento Sob Medida',
-      text: 'Construção da vitrine com sua identidade visual e regras de negócio.',
+      title: 'Criamos o seu catálogo',
+      text: 'Estruturamos as categorias com as cores e logo do seu comércio.',
     },
     {
       step: '03',
-      title: 'Conexão com WhatsApp & Testes',
-      text: 'Validação do checkout automatizado e envio das mensagens.',
+      title: 'Conexão com seu WhatsApp',
+      text: 'Configuramos o checkout para os pedidos caírem no seu número.',
     },
     {
       step: '04',
-      title: 'Publicação & Treinamento',
-      text: 'Entrega da aplicação no ar pronta para colocar no link da sua bio.',
+      title: 'No ar em até 7 dias',
+      text: 'Você coloca o link na bio do Instagram e já começa a receber pedidos.',
     },
   ]
 
@@ -27,14 +27,14 @@ export default function Process() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-xs font-bold text-blue-700 bg-blue-50 border border-blue-200/60 px-3 py-1 rounded-full uppercase tracking-wider">
-            Metodologia
+            Passo a Passo
           </span>
           <h2 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3">
-            Como funciona a implantação
+            Sem complicação: como colocamos sua loja no ar
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-2">
-            Processo ágil e transparente para colocar sua operação rodando em
-            até 7 dias úteis.
+            Você não precisa entender nada de tecnologia. Nós cuidamos de toda a
+            parte técnica.
           </p>
         </div>
 
